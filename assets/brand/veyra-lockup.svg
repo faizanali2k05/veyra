@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 420" role="img" aria-labelledby="title desc">
+  <title id="title">Veyra logo and wordmark</title>
+  <desc id="desc">Veyra gated-flow symbol paired with the lowercase Veyra wordmark.</desc>
+  <g transform="translate(24 -26) scale(.9)">
+    <path fill="#9D8BFF" d="M64 64h96l104 264-48 120L64 64Z"/>
+    <path fill="#40D7D0" d="M352 64h96l-32 80h-96l32-80Z"/>
+    <path fill="#40D7D0" d="M308 176h96L296 448h-80l92-272Z"/>
+  </g>
+  <text x="470" y="292" fill="#101525" font-family="Manrope, Inter, 'Avenir Next', sans-serif" font-size="218" font-weight="650" letter-spacing="-10">veyra</text>
+</svg>

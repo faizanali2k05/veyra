@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 360" role="img" aria-labelledby="title desc">
+  <title id="title">Veyra programming language</title>
+  <desc id="desc">Midnight banner with the violet and teal gated-flow V symbol, Veyra wordmark, and privacy-aware types tagline.</desc>
+  <rect width="1440" height="360" rx="28" fill="#101525"/>
+  <g transform="translate(86 52) scale(.52)">
+    <path fill="#9D8BFF" d="M64 64h96l104 264-48 120L64 64Z"/>
+    <path fill="#40D7D0" d="M352 64h96l-32 80h-96l32-80Z"/>
+    <path fill="#40D7D0" d="M308 176h96L296 448h-80l92-272Z"/>
+  </g>
+  <text x="390" y="191" fill="#F6F7FC" font-family="Manrope, Inter, 'Avenir Next', sans-serif" font-size="132" font-weight="650" letter-spacing="-6">veyra</text>
+  <text x="398" y="254" fill="#9D8BFF" font-family="Manrope, Inter, 'Avenir Next', sans-serif" font-size="30" font-weight="500" letter-spacing="1.2">PRIVACY-AWARE TYPES. VERIFIED DATA FLOW.</text>
+  <path d="M1215 82h116M1215 278h116" stroke="#40D7D0" stroke-width="6" stroke-linecap="square"/>
+</svg>

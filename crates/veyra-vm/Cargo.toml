@@ -1,0 +1,19 @@
+[package]
+name = "veyra-vm"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+rust-version.workspace = true
+
+[dependencies]
+veyra-bytecode = { path = "../veyra-bytecode" }
+veyra-source = { path = "../veyra-source" }
+
+[dev-dependencies]
+veyra-ast = { path = "../veyra-ast" }
+veyra-lexer = { path = "../veyra-lexer" }
+veyra-parser = { path = "../veyra-parser" }
+
+[lints]
+workspace = true
+

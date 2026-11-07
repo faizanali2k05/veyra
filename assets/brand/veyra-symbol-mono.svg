@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-labelledby="title desc">
+  <title id="title">Veyra monochrome symbol</title>
+  <desc id="desc">Monochrome geometric Veyra symbol with a policy-gate break.</desc>
+  <g fill="currentColor">
+    <path d="M64 64h96l104 264-48 120L64 64Z"/>
+    <path d="M352 64h96l-32 80h-96l32-80Z"/>
+    <path d="M308 176h96L296 448h-80l92-272Z"/>
+  </g>
+</svg>

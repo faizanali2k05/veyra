@@ -1,0 +1,23 @@
+[package]
+name = "veyra-parser"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+rust-version.workspace = true
+
+[dependencies]
+veyra-ast = { path = "../veyra-ast" }
+veyra-lexer = { path = "../veyra-lexer" }
+veyra-source = { path = "../veyra-source" }
+
+[dev-dependencies]
+criterion.workspace = true
+proptest.workspace = true
+
+[[bench]]
+name = "frontend"
+harness = false
+
+[lints]
+workspace = true
+

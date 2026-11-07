@@ -1,0 +1,26 @@
+name: CI
+
+on:
+  push:
+  pull_request:
+
+jobs:
+  rust:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: dtolnay/rust-toolchain@stable
+        with:
+          components: rustfmt, clippy
+      - run: cargo fmt --check
+      - run: cargo clippy --workspace --all-targets -- -D warnings
+      - run: cargo test --workspace
+      - name: Verify required language demonstrations
+        shell: bash
+        run: |
+          cargo run -q -p veyra-cli -- check examples/modules/main.vy
+          test "$(cargo run -q -p veyra-cli -- run examples/modules/main.vy)" = "49"
+          if cargo run -q -p veyra-cli -- check tests/fixtures/negative/type-mismatch.vy; then exit 1; fi
+          if cargo run -q -p veyra-cli -- check tests/fixtures/negative/implicit-flow.vy; then exit 1; fi
+          if cargo run -q -p veyra-cli -- check tests/fixtures/negative/unauthorized-release.vy; then exit 1; fi
+

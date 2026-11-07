@@ -1,0 +1,24 @@
+[package]
+name = "veyra-cli"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+rust-version.workspace = true
+
+[[bin]]
+name = "veyra"
+path = "src/main.rs"
+
+[dependencies]
+veyra-ast = { path = "../veyra-ast" }
+veyra-bytecode = { path = "../veyra-bytecode" }
+veyra-interpreter = { path = "../veyra-interpreter" }
+veyra-lexer = { path = "../veyra-lexer" }
+veyra-parser = { path = "../veyra-parser" }
+veyra-sema = { path = "../veyra-sema" }
+veyra-source = { path = "../veyra-source" }
+veyra-vm = { path = "../veyra-vm" }
+
+[lints]
+workspace = true
+

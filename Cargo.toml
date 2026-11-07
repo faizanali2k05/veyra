@@ -1,0 +1,47 @@
+[workspace]
+resolver = "2"
+members = [
+    "crates/veyra-source",
+    "crates/veyra-lexer",
+    "crates/veyra-ast",
+    "crates/veyra-parser",
+    "crates/veyra-sema",
+    "crates/veyra-interpreter",
+    "crates/veyra-bytecode",
+    "crates/veyra-vm",
+    "crates/veyra-stdlib",
+    "crates/veyra-cli",
+]
+
+[workspace.package]
+version = "1.0.0"
+edition = "2024"
+license = "MIT OR Apache-2.0"
+rust-version = "1.85"
+
+[workspace.lints.rust]
+unsafe_code = "forbid"
+
+[workspace.lints.clippy]
+all = { level = "warn", priority = -1 }
+pedantic = { level = "warn", priority = -1 }
+wildcard_imports = "allow"
+implicit_hasher = "allow"
+match_wildcard_for_single_variants = "allow"
+semicolon_if_nothing_returned = "allow"
+zero_sized_map_values = "allow"
+single_match_else = "allow"
+if_not_else = "allow"
+redundant_closure_for_method_calls = "allow"
+needless_pass_by_value = "allow"
+match_same_arms = "allow"
+too_many_lines = "allow"
+format_push_string = "allow"
+many_single_char_names = "allow"
+
+[workspace.dependencies]
+serde = { version = "1.0.228", features = ["derive"] }
+serde_json = "1.0.149"
+criterion = "0.5.1"
+proptest = "=1.6.0"
+

@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-labelledby="title desc">
+  <title id="title">Veyra symbol</title>
+  <desc id="desc">A precise geometric V formed by violet and teal information channels, with a deliberate policy-gate break in the upper-right channel.</desc>
+  <path fill="#9D8BFF" d="M64 64h96l104 264-48 120L64 64Z"/>
+  <path fill="#40D7D0" d="M352 64h96l-32 80h-96l32-80Z"/>
+  <path fill="#40D7D0" d="M308 176h96L296 448h-80l92-272Z"/>
+</svg>
